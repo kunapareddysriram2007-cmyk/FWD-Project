@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Requests - Blood Donation Portal</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav></nav>
+
+    <main>
+        <div class="container">
+            <h2>Donation Requests Dashboard</h2>
+            <p class="text-muted">
+                Accept or reject requests sent to you. Emergency requests that stay unanswered for more than 15 minutes become auto-denied.
+            </p>
+
+            <div id="requestsAlert" class="alert hidden mt-2"></div>
+            <div id="noRequestsMessage" class="alert alert-info hidden mt-2">You have not received any blood donation requests yet.</div>
+
+            <div id="requestsContainer" class="table-container hidden">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Requester Name</th>
+                            <th>Requester City</th>
+                            <th>Requested Time</th>
+                            <th>Type</th>
+                            <th>Action</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="requestsTableBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Blood Donation Portal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/auth.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/requests.js"></script>
+</body>
+</html>
